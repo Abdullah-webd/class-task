@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // THIS IS AN ARRAY LISTING 3 DIFFERENT STRINGS
+        const action = ["start", "stop","pause"];
+        // KEEPS START IN A VARIABLE CALLED USERACTION 
+        let userAction = "start";
+        // BOOLEAN VALUE "TRUE" IS KEPT IN A VARIABLE CALLED ISLoggedin
+        let isLoggedin = true;
+        switch(true) {
+            // "include()" is a method that is used to check if an element or string is in an array so it checks if the userAction variable is in the array called action. If it is true then it will check the other side which is isLoggedin variable . If the both conditions re true it will print out Action permitted: Start in the console
+            case action.includes(userAction) && isLoggedin:
+                console.log("Action permitted:" + userAction)
+                berak;
+            // otherwise if the second statement is true it will print please "log in to perform the action"  in the console 
+            case action.includes(userAction) && !isLoggedin:
+                console.log("please log in to perform the action");
+                break;
+            // else if none of the conditions are true it will print "No valid case found." in the console
+            default:
+                console.log("No valid case found.")
+        }
+
+    </script>
+</body>
+</html>
